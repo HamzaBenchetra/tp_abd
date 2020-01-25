@@ -1,0 +1,106 @@
+[
+    {
+        "name": "IMMATRICULATION",
+        "dbType": "integer,false",
+        "htmlType": null,
+        "validations": null,
+        "searchable": false,
+        "fillable": false,
+        "primary": true,
+        "inForm": false,
+        "inIndex": false,
+        "inView": false
+    },
+    {
+        "name": "COULEUR",
+        "dbType": "string,200",
+        "htmlType": "text",
+        "validations": "required",
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true,
+        "inView": true
+    },
+    {
+        "name": "AGE",
+        "dbType": "integer,false",
+        "htmlType": null,
+        "validations": "required",
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true,
+        "inView": true
+    },
+    {
+        "name": "NUMMOD",
+        "dbType": "integer,false",
+        "htmlType": null,
+        "validations": "required",
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true,
+        "inView": true
+    },
+    {
+        "name": "NUMAG",
+        "dbType": "integer,false",
+        "htmlType": null,
+        "validations": "required",
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true,
+        "inView": true
+    },
+    {
+        "name": "NUMTYPE",
+        "dbType": "integer,false",
+        "htmlType": null,
+        "validations": "required",
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true,
+        "inView": true
+    },
+    {
+        "name": "NUMCAT",
+        "dbType": "integer,false",
+        "htmlType": null,
+        "validations": "required",
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true,
+        "inView": true
+    },
+    {
+        "type": "relation",
+        "relation": "mt1,MODELE,NUMMOD"
+    },
+    {
+        "type": "relation",
+        "relation": "mt1,AGENCE,NUMAG"
+    },
+    {
+        "type": "relation",
+        "relation": "mt1,TYPE,NUMTYPE"
+    },
+    {
+        "type": "relation",
+        "relation": "mt1,CATEGORIE,NUMCAT"
+    },
+    {
+        "type": "relation",
+        "relation": "1tm,CONTRAT,IMMAT"
+    }
+]
