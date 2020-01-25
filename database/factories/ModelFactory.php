@@ -2,10 +2,10 @@
 
 /** @var \Illuminate\Database\Eloquent\Factory $factory */
 
-use App\Models\Model;
+use App\Models\Modele;
 use Faker\Generator as Faker;
 
-$factory->define(Model::class, function (Faker $faker) {
+$factory->define(Modele::class, function (Faker $faker) {
 
     return [
         'MARQUE' => $faker->word

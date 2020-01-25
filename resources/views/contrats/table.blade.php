@@ -16,19 +16,19 @@
         <tbody>
         @foreach($contrats as $contrat)
             <tr>
-                <td>{{ $contrat->DATECONT }}</td>
-            <td>{{ $contrat->CAUTION }}</td>
-            <td>{{ $contrat->KMDEP }}</td>
-            <td>{{ $contrat->KMRET }}</td>
-            <td>{{ $contrat->ETATCONT }}</td>
-            <td>{{ $contrat->NUMCLI }}</td>
-            <td>{{ $contrat->IMMAT }}</td>
-            <td>{{ $contrat->MODELOC }}</td>
+                <td>{{ $contrat->datecont }}</td>
+            <td>{{ $contrat->caution }}</td>
+            <td>{{ $contrat->kmdep }}</td>
+            <td>{{ $contrat->kmret }}</td>
+            <td>{{ $contrat->etatcont }}</td>
+            <td>{{ $contrat->numcli }}</td>
+            <td>{{ $contrat->immat }}</td>
+            <td>{{ $contrat->modeloc }}</td>
                 <td>
                     {!! Form::open(['route' => ['contrats.destroy', $contrat->id], 'method' => 'delete']) !!}
                     <div class='btn-group'>
-                        <a href="{{ route('contrats.show', [$contrat->id]) }}" class='btn btn-default btn-xs'><i class="glyphicon glyphicon-eye-open"></i></a>
-                        <a href="{{ route('contrats.edit', [$contrat->id]) }}" class='btn btn-default btn-xs'><i class="glyphicon glyphicon-edit"></i></a>
+                        <a href="{{ route('contrats.show', [$contrat->numcontr]) }}" class='btn btn-default btn-xs'><i class="glyphicon glyphicon-eye-open"></i></a>
+                        <a href="{{ route('contrats.edit', [$contrat->numcontr]) }}" class='btn btn-default btn-xs'><i class="glyphicon glyphicon-edit"></i></a>
                         {!! Form::button('<i class="glyphicon glyphicon-trash"></i>', ['type' => 'submit', 'class' => 'btn btn-danger btn-xs', 'onclick' => "return confirm('Are you sure?')"]) !!}
                     </div>
                     {!! Form::close() !!}

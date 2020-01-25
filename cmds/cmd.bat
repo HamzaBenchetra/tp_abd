@@ -6,7 +6,7 @@ php artisan infyom:scaffold Contrat --fromTable --tableName=CONTRAT
 
 php artisan infyom:scaffold Etat-Contrat --fromTable --tableName=ETAT-CONTRAT
 
-php artisan infyom:scaffold Model --fromTable --tableName=MODELE
+php artisan infyom:scaffold Modele --fromTable --tableName=MODELE
 
 php artisan infyom:scaffold ModeLocation --fromTable --tableName=MODELOCATION
 

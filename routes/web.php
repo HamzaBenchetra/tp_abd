@@ -28,7 +28,7 @@ Route::resource('agences', 'AgenceController');
 
 Route::resource('contrats', 'ContratController');
 
-Route::resource('etatContrats', 'Etat-ContratController');
+Route::resource('etatContrats', 'Etat_ContratController');
 
 Route::resource('models', 'ModelController');
 
@@ -46,10 +46,13 @@ Route::resource('villes', 'VilleController');
 
 Route::resource('users', 'UsersController');
 
-Route::resource('etatContrats', 'Etat-ContratController');
+Route::resource('etatContrats', 'Etat_ContratController');
 
 Route::resource('modeLocations', 'ModeLocationController');
 
-Route::resource('etatContrats', 'Etat-ContratController');
+Route::resource('etatContrats', 'Etat_ContratController');
 
 Route::resource('modeLocations', 'ModeLocationController');
+
+
+Route::resource('modeles', 'ModeleController');

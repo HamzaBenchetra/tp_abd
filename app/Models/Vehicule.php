@@ -9,7 +9,7 @@ use Eloquent as Model;
  * @package App\Models
  * @version January 25, 2020, 6:21 pm UTC
  *
- * @property \App\Models\MODELE nummod
+ * @property \App\Models\Modele nummod
  * @property \App\Models\AGENCE numag
  * @property \App\Models\TYPE numtype
  * @property \App\Models\CATEGORIE numcat
@@ -25,7 +25,7 @@ class Vehicule extends Model
 {
 
     public $table = 'VEHICULE';
-    
+
     public $timestamps = false;
 
 
@@ -74,7 +74,7 @@ class Vehicule extends Model
      **/
     public function nummod()
     {
-        return $this->belongsTo(\App\Models\MODELE::class, 'NUMMOD');
+        return $this->belongsTo(\App\Models\Modele::class, 'NUMMOD');
     }
 
     /**

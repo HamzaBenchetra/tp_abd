@@ -9,12 +9,12 @@
         <tbody>
         @foreach($etatContrats as $etatContrat)
             <tr>
-                <td>{{ $etatContrat->LIBETATCONT }}</td>
+                <td>{{ $etatContrat->libetatcont }}</td>
                 <td>
                     {!! Form::open(['route' => ['etatContrats.destroy', $etatContrat->id], 'method' => 'delete']) !!}
                     <div class='btn-group'>
-                        <a href="{{ route('etatContrats.show', [$etatContrat->id]) }}" class='btn btn-default btn-xs'><i class="glyphicon glyphicon-eye-open"></i></a>
-                        <a href="{{ route('etatContrats.edit', [$etatContrat->id]) }}" class='btn btn-default btn-xs'><i class="glyphicon glyphicon-edit"></i></a>
+                        <a href="{{ route('etatContrats.show', [$etatContrat->etatcont]) }}" class='btn btn-default btn-xs'><i class="glyphicon glyphicon-eye-open"></i></a>
+                        <a href="{{ route('etatContrats.edit', [$etatContrat->etatcont]) }}" class='btn btn-default btn-xs'><i class="glyphicon glyphicon-edit"></i></a>
                         {!! Form::button('<i class="glyphicon glyphicon-trash"></i>', ['type' => 'submit', 'class' => 'btn btn-danger btn-xs', 'onclick' => "return confirm('Are you sure?')"]) !!}
                     </div>
                     {!! Form::close() !!}

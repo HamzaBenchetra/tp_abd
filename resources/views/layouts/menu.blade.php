@@ -50,3 +50,7 @@
     <a href="{{ route('users.index') }}"><i class="fa fa-edit"></i><span>Users</span></a>
 </li>
 
+<li class="{{ Request::is('modeles*') ? 'active' : '' }}">
+    <a href="{{ route('modeles.index') }}"><i class="fa fa-edit"></i><span>Modeles</span></a>
+</li>
+

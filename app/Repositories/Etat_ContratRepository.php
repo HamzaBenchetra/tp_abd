@@ -2,7 +2,7 @@
 
 namespace App\Repositories;
 
-use App\Models\Etat-Contrat;
+use App\Models\Etat_Contrat;
 use App\Repositories\BaseRepository;
 
 /**
@@ -11,7 +11,7 @@ use App\Repositories\BaseRepository;
  * @version January 25, 2020, 6:20 pm UTC
 */
 
-class Etat-ContratRepository extends BaseRepository
+class Etat_ContratRepository extends BaseRepository
 {
     /**
      * @var array

@@ -12,11 +12,11 @@ use Eloquent as Model;
  * @property \Illuminate\Database\Eloquent\Collection vEHICULES
  * @property string MARQUE
  */
-class Model extends Model
+class Modele extends Model
 {
 
     public $table = 'MODELE';
-    
+
     public $timestamps = false;
 
 

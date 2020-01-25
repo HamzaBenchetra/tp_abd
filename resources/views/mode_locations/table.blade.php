@@ -9,12 +9,12 @@
         <tbody>
         @foreach($modeLocations as $modeLocation)
             <tr>
-                <td>{{ $modeLocation->DESCMODELOC }}</td>
+                <td>{{ $modeLocation->descmodeloc }}</td>
                 <td>
                     {!! Form::open(['route' => ['modeLocations.destroy', $modeLocation->id], 'method' => 'delete']) !!}
                     <div class='btn-group'>
-                        <a href="{{ route('modeLocations.show', [$modeLocation->id]) }}" class='btn btn-default btn-xs'><i class="glyphicon glyphicon-eye-open"></i></a>
-                        <a href="{{ route('modeLocations.edit', [$modeLocation->id]) }}" class='btn btn-default btn-xs'><i class="glyphicon glyphicon-edit"></i></a>
+                        <a href="{{ route('modeLocations.show', [$modeLocation->modeloc]) }}" class='btn btn-default btn-xs'><i class="glyphicon glyphicon-eye-open"></i></a>
+                        <a href="{{ route('modeLocations.edit', [$modeLocation->modeloc]) }}" class='btn btn-default btn-xs'><i class="glyphicon glyphicon-edit"></i></a>
                         {!! Form::button('<i class="glyphicon glyphicon-trash"></i>', ['type' => 'submit', 'class' => 'btn btn-danger btn-xs', 'onclick' => "return confirm('Are you sure?')"]) !!}
                     </div>
                     {!! Form::close() !!}

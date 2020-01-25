@@ -2,20 +2,20 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Requests\CreateEtat-ContratRequest;
-use App\Http\Requests\UpdateEtat-ContratRequest;
-use App\Repositories\Etat-ContratRepository;
+use App\Http\Requests\CreateEtat_ContratRequest;
+use App\Http\Requests\UpdateEtat_ContratRequest;
+use App\Repositories\Etat_ContratRepository;
 use App\Http\Controllers\AppBaseController;
 use Illuminate\Http\Request;
 use Flash;
 use Response;
 
-class Etat-ContratController extends AppBaseController
+class Etat_ContratController extends AppBaseController
 {
     /** @var  Etat-ContratRepository */
     private $etatContratRepository;
 
-    public function __construct(Etat-ContratRepository $etatContratRepo)
+    public function __construct(Etat_ContratRepository $etatContratRepo)
     {
         $this->etatContratRepository = $etatContratRepo;
     }
@@ -52,7 +52,7 @@ class Etat-ContratController extends AppBaseController
      *
      * @return Response
      */
-    public function store(CreateEtat-ContratRequest $request)
+    public function store(CreateEtat_ContratRequest $request)
     {
         $input = $request->all();
 
@@ -111,7 +111,7 @@ class Etat-ContratController extends AppBaseController
      *
      * @return Response
      */
-    public function update($id, UpdateEtat-ContratRequest $request)
+    public function update($id, UpdateEtat_ContratRequest $request)
     {
         $etatContrat = $this->etatContratRepository->find($id);
 

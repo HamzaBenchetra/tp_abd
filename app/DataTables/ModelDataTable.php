@@ -2,7 +2,7 @@
 
 namespace App\DataTables;
 
-use App\Models\Model;
+use App\Models\Modele;
 use Yajra\DataTables\Services\DataTable;
 use Yajra\DataTables\EloquentDataTable;
 
@@ -24,10 +24,10 @@ class ModelDataTable extends DataTable
     /**
      * Get query source of dataTable.
      *
-     * @param \App\Models\Model $model
+     * @param \App\Models\Modele $model
      * @return \Illuminate\Database\Eloquent\Builder
      */
-    public function query(Model $model)
+    public function query(Modele $model)
     {
         return $model->newQuery();
     }
